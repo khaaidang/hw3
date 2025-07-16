@@ -4,7 +4,7 @@ document.querySelector("#inputForm").addEventListener("submit", function (event)
 // Functions
 async function displayInfo() {
     document.querySelector("#characterImage").style.display = "none";
-    document.querySelector("#characterError").style.display = "none";
+    document.querySelector("#characterError").innerHTML = "";
     
     let name = document.querySelector("#characterName").value;
     let species = document.querySelector("#characterSpecies").value;
