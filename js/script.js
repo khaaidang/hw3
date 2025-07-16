@@ -3,6 +3,9 @@ document.querySelector("#inputForm").addEventListener("submit", function (event)
 
 // Functions
 async function displayInfo() {
+    document.querySelector("#characterImage").style.display = "none";
+    document.querySelector("#characterError").style.display = "none";
+    
     let name = document.querySelector("#characterName").value;
     let species = document.querySelector("#characterSpecies").value;
     let img = document.querySelector("#characterImage");
@@ -29,6 +32,7 @@ async function displayInfo() {
         img.style.display = "none";
         img.src = "";
         img.alt = "";
+        document.querySelector("#characterDetails").style.display = "none";
         document.querySelector("#characterError").innerHTML = "Nope. Not in this universe. Spell it right or try someone else.";
     }
 }
