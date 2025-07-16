@@ -27,7 +27,7 @@
     <div class="d-flex w-100" style="max-width: 900px; gap: 50px;">
         <!-- Input Side -->
         <div class="glass-card" style="flex:1;">
-            <form id="inputForm" method = "GET" class= "d-flex flex-column h-100">
+            <form id="inputForm" method="GET" class="d-flex flex-column h-100">
                 <div class="mb-3">
                     Name: <input type="text" class="form-control" name="characterName" id="characterName">
                     <span id="nameError"></span>
@@ -44,11 +44,13 @@
         <div id="resultArea" class="glass-card" style="flex:2;">
             <p id="characterError" class="text-danger"></p>
             <img id="characterImage" class="img-fluid rounded mt-3" alt="character image" style="display:none;">
-            <p><span id="status">Status: </span></p>
-            <p><span id="species">Species: </span></p>
-            <p><span id="gender">Gender: </span></p>
-            <p><span id="origin">Origin: </span></p>
-            <p><span id="location">Location: </span></p>
+            <div id="characterDetails" style="display: none;">
+                <p><span id="status">Status: </span></p>
+                <p><span id="species">Species: </span></p>
+                <p><span id="gender">Gender: </span></p>
+                <p><span id="origin">Origin: </span></p>
+                <p><span id="location">Location: </span></p>
+            </div>
 
         </div>
     </div>

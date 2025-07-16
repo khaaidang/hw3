@@ -18,6 +18,7 @@ async function displayInfo() {
         img.alt = character.name;
         img.style.display = "block";
         document.querySelector("#characterError").innerHTML = "";
+        document.querySelector("#characterDetails").style.display = "block";
         document.querySelector("#status").innerHTML = `Status: ${character.status}`;
         document.querySelector("#species").innerHTML = `Species: ${character.species}`;
         document.querySelector("#gender").innerHTML = `Gender: ${character.gender}`;
